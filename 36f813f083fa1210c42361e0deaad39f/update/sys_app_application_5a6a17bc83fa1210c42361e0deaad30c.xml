@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="">Custom Applications</category>
+        <description>A Universal Employee Experience Portal</description>
+        <device_type>browser</device_type>
+        <hint>A Universal Employee Experience Portal</hint>
+        <name/>
+        <order/>
+        <roles>admin,user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-28 17:21:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5a6a17bc83fa1210c42361e0deaad30c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee Experience Portal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Experience Portal" source="x_1591847_emp_exp">36f813f083fa1210c42361e0deaad39f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Experience Portal">36f813f083fa1210c42361e0deaad39f</sys_scope>
+        <sys_update_name>sys_app_application_5a6a17bc83fa1210c42361e0deaad30c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-28 17:21:11</sys_updated_on>
+        <title>Employee Experience Portal</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

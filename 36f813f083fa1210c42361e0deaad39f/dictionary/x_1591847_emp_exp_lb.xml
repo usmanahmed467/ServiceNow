@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="29452730837e1210c42361e0deaad3c1" label="Leaves Bucket" max_length="40" name="x_1591847_emp_exp_lb" type="collection">
+        <element label="Applied" max_length="40" name="applied" type="integer"/>
+        <element label="Remaining" max_length="40" name="remaining" type="integer"/>
+        <element label="Accepted" max_length="40" name="accepted" type="integer"/>
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="Total Leaves" max_length="40" name="total_leaves" type="integer"/>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+    </element>
+</database>

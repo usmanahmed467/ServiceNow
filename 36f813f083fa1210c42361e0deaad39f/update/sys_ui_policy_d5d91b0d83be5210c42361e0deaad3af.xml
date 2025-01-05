@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_1591847_emp_exp_lr">half_day=true^EQ<item endquery="false" field="half_day" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+    g_form.clearValue('duration');
+    g_form.setMandatory('leave_end_date', true);
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+    g_form.clearValue('leave_end_date');
+    g_form.setMandatory('leave_end_date', false);
+}]]></script_true>
+        <set_values/>
+        <short_description>Half Day Constraints</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-29 12:05:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d5d91b0d83be5210c42361e0deaad3af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Half Day Constraints</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Experience Portal" source="x_1591847_emp_exp">36f813f083fa1210c42361e0deaad39f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Experience Portal">36f813f083fa1210c42361e0deaad39f</sys_scope>
+        <sys_update_name>sys_ui_policy_d5d91b0d83be5210c42361e0deaad3af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-29 12:05:03</sys_updated_on>
+        <table>x_1591847_emp_exp_lr</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d5d91b0d83be5210c42361e0deaad3af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-29 12:05:02</sys_created_on>
+        <sys_id>7cab5b0d83be5210c42361e0deaad335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-29 12:05:02</sys_updated_on>
+        <table>sys_ui_policy</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_1591847_emp_exp_lr">x_1591847_emp_exp_lr</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>LEA</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-28 17:19:32</sys_created_on>
+        <sys_id>ca0a5bb0833e1210c42361e0deaad361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LEA</sys_name>
+        <sys_package display_value="Employee Experience Portal" source="x_1591847_emp_exp">36f813f083fa1210c42361e0deaad39f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Experience Portal">36f813f083fa1210c42361e0deaad39f</sys_scope>
+        <sys_update_name>sys_number_ca0a5bb0833e1210c42361e0deaad361</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-28 17:19:32</sys_updated_on>
+    </sys_number>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>leave_start_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Set Duration on Start Date change</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '' || g_form.getValue('duration' == 'true') || g_form.getValue('leave_end_date') == '') {
+        return;
+    }
+
+    //Type appropriate comment here, and begin script below
+    var endDateString = g_form.getValue('leave_end_date');
+    if (endDateString != '' || endDateString != null) {
+        var endDate = new Date(endDateString);
+        var startDate = new Date(newValue);
+        var Difference_In_Time = endDate.getTime() - startDate.getTime();
+        var Difference_In_Days = Math.round(Difference_In_Time / (1000 * 3600 * 24));
+        Difference_In_Days += 1;
+		if (Difference_In_Days <= 0) {
+			g_form.setValue('leave_start_date', endDateString);
+			Difference_In_Days = 1;
+		}
+        g_form.setValue('duration', Difference_In_Days);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-29 11:38:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1ee4db0583be5210c42361e0deaad3b7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Set Duration on Start Date change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Experience Portal" source="x_1591847_emp_exp">36f813f083fa1210c42361e0deaad39f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Experience Portal">36f813f083fa1210c42361e0deaad39f</sys_scope>
+        <sys_update_name>sys_script_client_1ee4db0583be5210c42361e0deaad3b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-29 11:51:52</sys_updated_on>
+        <table>x_1591847_emp_exp_lr</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

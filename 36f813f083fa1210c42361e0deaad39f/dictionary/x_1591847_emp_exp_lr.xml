@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="350a1bb0833e1210c42361e0deaad3b5" label="Leave Request" max_length="40" name="x_1591847_emp_exp_lr" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Approval" max_length="40" name="approval" type="boolean"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element choice="3" default="submitted" label="Status" max_length="40" name="status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Submitted" sequence="0" value="submitted"/>
+                <element inactive_on_update="false" label="Approved" sequence="1" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+            </choice>
+        </element>
+        <element label="Leave End Date" mandatory="true" max_length="40" name="leave_end_date" type="glide_date"/>
+        <element label="Half Day" max_length="40" name="half_day" type="boolean"/>
+        <element label="Duration" max_length="40" name="duration" read_only="true" type="float"/>
+        <element label="Request Id" max_length="40" name="request_id" type="integer"/>
+        <element label="Requested By" max_length="32" name="requested_by" read_only="true" reference="sys_user" type="reference"/>
+        <element choice="3" default="an" label="Leave Type" mandatory="true" max_length="40" name="leave_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="WFH" value="wfh"/>
+                <element inactive_on_update="false" label="Annual" value="an"/>
+            </choice>
+        </element>
+        <element label="Leave Start Date" mandatory="true" max_length="40" name="leave_start_date" type="glide_date"/>
+        <element label="Reason" mandatory="true" max_length="40" name="reason" type="string"/>
+        <index name="index">
+            <element name="requested_by"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

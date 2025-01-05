@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-28 18:11:20</sys_created_on>
+        <sys_id>b4e52370837e1210c42361e0deaad306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1591847_emp_exp_lb.x_1591847_emp_exp.leaves_bucket_user</sys_name>
+        <sys_package display_value="Employee Experience Portal" source="x_1591847_emp_exp">36f813f083fa1210c42361e0deaad39f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Experience Portal">36f813f083fa1210c42361e0deaad39f</sys_scope>
+        <sys_security_acl display_value="x_1591847_emp_exp_lb">78e52370837e1210c42361e0deaad302</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b4e52370837e1210c42361e0deaad306</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-28 18:11:20</sys_updated_on>
+        <sys_user_role display_value="x_1591847_emp_exp.leaves_bucket_user" name="x_1591847_emp_exp.leaves_bucket_user">6ce5233c833e1210c42361e0deaad317</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

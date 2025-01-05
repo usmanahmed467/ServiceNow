@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_user</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create Leave Bucket</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+    var gdt = new GlideDateTime();
+    var currentMonth = gdt.getMonthLocalTime;
+    var monthsRemaining = 12 - currentMonth;
+    var totalLeaves = (monthsRemaining + 1) * 2;
+    var lb = new GlideRecord('x_1591847_emp_exp_lb');
+    lb.initialize();
+    lb.total_leaves = totalLeaves;
+    lb.remaining = 0;
+    lb.applied = 0;
+    lb.accepted = 0;
+    lb.employee = current.sys_id;
+    lb.insert();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-28 18:28:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9e36e770837e1210c42361e0deaad3eb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Create Leave Bucket</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Experience Portal" source="x_1591847_emp_exp">36f813f083fa1210c42361e0deaad39f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Experience Portal">36f813f083fa1210c42361e0deaad39f</sys_scope>
+        <sys_update_name>sys_script_9e36e770837e1210c42361e0deaad3eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-05 11:04:27</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=9e36e770837e1210c42361e0deaad3eb"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9e36e770837e1210c42361e0deaad3eb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-28 18:28:26</sys_created_on>
+        <sys_id>9fc92774837e1210c42361e0deaad37e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-28 18:28:26</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="remaining" label="Remaining" language="en" table="x_1591847_emp_exp_lb">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>remaining</element>
+            <help/>
+            <hint/>
+            <label>Remaining</label>
+            <language>en</language>
+            <name>x_1591847_emp_exp_lb</name>
+            <plural>Remainings</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-28 18:11:20</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Remaining</sys_name>
+            <sys_package display_value="Employee Experience Portal" source="x_1591847_emp_exp">36f813f083fa1210c42361e0deaad39f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Employee Experience Portal">36f813f083fa1210c42361e0deaad39f</sys_scope>
+            <sys_update_name>sys_documentation_x_1591847_emp_exp_lb_remaining_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-28 18:11:20</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
